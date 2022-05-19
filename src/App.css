@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.App{
+    background-image: url("https://i.imgur.com/G59jKlU.jpg");
+    background-size:contain;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item a{
+    color: white;
+    font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#CarouselApi .CarouselItem{
+    color:white;
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#CarouselApi img{
+    width: 40%;
+    
 }
 
-.App-link {
-  color: #61dafb;
+#CarouselApi .ItemInfo h1{
+    margin-bottom: 55px;
+    font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#CarouselApi .ItemInfo ul{
+    font-size: 20px;
+}
+
+.carousel .carousel-indicators{
+    display: none;
+}
+
+.Login{
+    text-align: center;
+    color: white;
+}
+
+.Login .form-control{
+    margin: 0 auto;
+    width: 20%;
+    background-color: transparent;  
+}
+
+.Login .btn{
+    margin: 15px 25px;
+}
+
+#RegisterForm{
+    text-align: center;
+}
+
+#RegisterForm .modal-content{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.907);
+}
+
+.Footer{
+    height: 145px;
+    margin-top: 45px;
+    color: white;
+    overflow: hidden;
 }

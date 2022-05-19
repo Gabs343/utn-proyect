@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "mail": "test1@gmail.com",
+      "password": "1234"
+    },
+    {
+      "mail": "gabs@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "mail": "test3@gmail.com",
+      "password": "works",
+      "id": 3
+    }
+  ],
+  "solarSystem": [
+    {
+      "_id": {
+        "$oid": "6196dbe95dd00bd622caa22e"
+      },
+      "src": "https://i.imgur.com/vMZyaMT.png",
+      "name": "earth",
+      "information": {
+        "category": "Planet",
+        "mass": "5.9722 × 10 24 kg",
+        "discoveryDate": "",
+        "discoveryBy": ""
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "61984e223550ceeddbc7dd85"
+      },
+      "src": "https://i.imgur.com/sUAA4Sb.png",
+      "name": "jupiter",
+      "information": {
+        "category": "Planet",
+        "mass": "1.8982× 10 27 kg",
+        "discoveryDate": "1610",
+        "discoveryBy": "Galileo Galilei"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "61984f8b3550ceeddbc7dd87"
+      },
+      "src": "https://i.imgur.com/oacokX7.png",
+      "name": "mars",
+      "information": {
+        "category": "Planet",
+        "mass": "6.417 × 10 23 kg ",
+        "discoveryDate": "1576",
+        "discoveryBy": "Tycho Brahe"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "619850243550ceeddbc7dd89"
+      },
+      "src": "https://i.imgur.com/3dxUS2J.png",
+      "name": "mercury",
+      "information": {
+        "category": "Planet",
+        "mass": "3.301 × 10 23 kg",
+        "discoveryDate": "1631",
+        "discoveryBy": "Thomas Harriott and Galileo Galilei"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "619850853550ceeddbc7dd8b"
+      },
+      "src": "https://i.imgur.com/52OBJwp.png",
+      "name": "moon",
+      "information": {
+        "category": "Satellite",
+        "mass": "7.348 × 10 22 kg",
+        "discoveryDate": "",
+        "discoveryBy": ""
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "619851103550ceeddbc7dd8d"
+      },
+      "src": "https://i.imgur.com/ZxxdVub.png",
+      "name": "neptune",
+      "information": {
+        "category": "Planet",
+        "mass": "1.024 × 10 26 kg ",
+        "discoveryDate": "1846",
+        "discoveryBy": ""
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6198516d3550ceeddbc7dd8f"
+      },
+      "src": "https://i.imgur.com/ISWqkn2.png",
+      "name": "pluto",
+      "information": {
+        "category": "Planet",
+        "mass": "1.309 × 10 22 kg",
+        "discoveryDate": "1930",
+        "discoveryBy": "Clyde W. Tombaugh"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6198520a3550ceeddbc7dd91"
+      },
+      "src": "https://i.imgur.com/bAttpTx.png",
+      "name": "saturn",
+      "information": {
+        "category": "Planet",
+        "mass": "5.683 × 10²⁶ kg",
+        "discoveryDate": "1610",
+        "discoveryBy": "Galileo Galilei"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "619852a33550ceeddbc7dd93"
+      },
+      "src": "https://i.imgur.com/eEL1oKl.png",
+      "name": "sun",
+      "information": {
+        "category": "Star",
+        "mass": "1.9885 × 10 30 kg",
+        "discoveryDate": "",
+        "discoveryBy": ""
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "6198531c3550ceeddbc7dd95"
+      },
+      "src": "https://i.imgur.com/JvExT2Y.png",
+      "name": "uranus",
+      "information": {
+        "category": "Planet",
+        "mass": "8.681 × 10 25 kg",
+        "discoveryDate": "1781",
+        "discoveryBy": "William Herschel"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "619853813550ceeddbc7dd97"
+      },
+      "src": "https://i.imgur.com/WDu7cQs.png",
+      "name": "venus",
+      "information": {
+        "category": "Planet",
+        "mass": "4.868 × 10 24 kg",
+        "discoveryDate": "1600",
+        "discoveryBy": "Galileo Galilei"
+      },
+      "__v": 0
+    }
+  ]
+}
