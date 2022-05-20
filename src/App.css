@@ -41,7 +41,8 @@
 .Login .form-control{
     margin: 0 auto;
     width: 20%;
-    background-color: transparent;  
+    background-color: transparent; 
+    color: white; 
 }
 
 .Login .btn{
@@ -62,4 +63,11 @@
     margin-top: 45px;
     color: white;
     overflow: hidden;
+    text-align: center;
+}
+
+.Icon{
+    font-size: 40px;
+    margin: 0 20px;
+    color: white;
 }

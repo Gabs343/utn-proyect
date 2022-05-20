@@ -2,7 +2,8 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 
-function Navigation(){
+function Navigation(props){
+    const { isLogged } = props
     return(
         <>
             <Nav className="justify-content-center mb-5">
@@ -10,7 +11,7 @@ function Navigation(){
                     <Nav.Link href="/">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/login">Login</Nav.Link>
+                    <Nav.Link href={isLogged ? "/profile" : "/login" }>{isLogged ? "Profile" : "Login"}</Nav.Link>
                 </Nav.Item>
             </Nav>
             <Outlet/>

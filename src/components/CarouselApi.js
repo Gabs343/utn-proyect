@@ -1,9 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import ApiContext from "../ApiContext";
 import { Carousel } from 'react-bootstrap';
 
-function CarouselApi(props){
+function CarouselApi(){
     
     const [index, setIndex] = useState(0);
+
+    const {stateSolarSyst: {data} } = useContext(ApiContext);
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -12,7 +15,7 @@ function CarouselApi(props){
     return (
         <Carousel id='CarouselApi' activeIndex={index} onSelect={handleSelect}>
 
-        {props.info.map((data) => {
+        {data.map((data) => {
             return(
                 <Carousel.Item>
                     <div className='CarouselItem'>
