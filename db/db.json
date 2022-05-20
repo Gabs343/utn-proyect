@@ -6,14 +6,9 @@
       "password": "1234"
     },
     {
-      "mail": "gabs@gmail.com",
-      "password": "1234",
+      "mail": "testReducer@gmail.com",
+      "psw": "1234",
       "id": 2
-    },
-    {
-      "mail": "test3@gmail.com",
-      "password": "works",
-      "id": 3
     }
   ],
   "solarSystem": [
