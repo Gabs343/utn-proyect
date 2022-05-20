@@ -1,20 +1,22 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Form from 'react-bootstrap/Form'
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import ApiContext from '../ApiContext'
 
-function Profile(props){
+function Profile(){
     const navigate = useNavigate();
-    const {setLogout} = props;
+ 
+    const {dispatchUser} = useContext(ApiContext);
     
     const handleSubmit = () => {
         localStorage.clear();
-        setLogout();
+        dispatchUser({type: "SET_LOG", payload: localStorage.getItem("id") !== null })
         navigate("/");
     }
 
     return(
-        <div>
+        <div className='Profile container'>
             <h1>Profile</h1>
             <Form onSubmit={handleSubmit}>
                 <Button variant="danger" type="submit">Exit</Button>

@@ -8,10 +8,9 @@ import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import ApiContext from '../ApiContext';
 
-function Login(props){
+function Login(){
     const navigate = useNavigate();
     const { show, on, off } = useRegister();
-    const {setLogin} = props;
 
     const {stateUser: {mail, psw}, dispatchUser} = useContext(ApiContext);
 
@@ -20,7 +19,7 @@ function Login(props){
 
         Axios.get(`${env.SERVER}users?mail=${mail}&password=${psw}`).then((response) => {
             localStorage.setItem("id", response.data[0]["id"]);
-            setLogin();
+            dispatchUser({type: "SET_LOG", payload: localStorage.getItem("id") !== null })
             navigate("/");
         })
     })

@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import ApiContext from "../ApiContext";
 import { Carousel } from 'react-bootstrap';
+import { FaRegStar } from "react-icons/fa";
 
 function CarouselApi(){
     
@@ -22,7 +23,10 @@ function CarouselApi(){
                         <img src={data.src} alt='...'/>
 
                         <div className='ItemInfo'>
-                            <h1>{data.name.toUpperCase()}</h1>    
+                            <div className='d-flex'>
+                                <h1>{data.name.toUpperCase()}</h1>
+                                <FaRegStar className='Icon'/>
+                            </div>   
                             <ul>
                                 {Object.keys(data.information).map((k) => {
                                     if(data.information[k] != ''){

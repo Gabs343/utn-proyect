@@ -1,6 +1,7 @@
 .App{
     background-image: url("https://i.imgur.com/G59jKlU.jpg");
     background-size:contain;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav-item a{
@@ -56,6 +57,12 @@
 #RegisterForm .modal-content{
     color: white;
     background-color: rgba(0, 0, 0, 0.907);
+}
+
+.Profile{
+    text-align: center;
+    color: white;
+    margin: 50px 0;
 }
 
 .Footer{

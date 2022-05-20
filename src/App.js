@@ -10,8 +10,6 @@ import Home from './screens/Home';
 import Login from './screens/Login'
 import Profile from './screens/Profile';
 
-import { useLoggedState } from './hook/useLoggedState';
-
 import solarSystemReducer from './reducers/solarSystemReducer';
 import userReducer from './reducers/userReducer';
 
@@ -22,25 +20,24 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const {logged, login, logout} = useLoggedState(localStorage.getItem("id") !== null);
-
+  
   const [stateSolarSyst, dispatchSolarSyst] = useReducer(solarSystemReducer, {data: []});
-  const [stateUser, dispatchUser] = useReducer(userReducer, {mail: ""});
+  const [stateUser, dispatchUser] = useReducer(userReducer, {data: [], mail: "", psw: "", logged: localStorage.getItem("id") !== null});
 
   useEffect(() => {
     Axios.get(`${env.SERVER}solarSystem`).then((response) => {
       dispatchSolarSyst({type: "SET_DATA", payload: response.data})
     })
   }, []);
-
+  
   return (
     <ApiContext.Provider value={{stateSolarSyst, dispatchSolarSyst, stateUser, dispatchUser}}>
     <div className="App">  
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navigation isLogged={logged}/>}>
+        <Route path='/' element={<Navigation/>}>
           <Route index element={<Home/>}/>
-          <Route path={logged ? 'profile' : 'login'} element={logged ? <Profile setLogout={logout}/> : <Login setLogin={login}/>}/>
+          <Route path={stateUser.logged ? 'profile' : 'login'} element={stateUser.logged ? <Profile/> : <Login/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
