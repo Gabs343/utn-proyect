@@ -4,11 +4,6 @@
       "id": 1,
       "mail": "test1@gmail.com",
       "password": "1234"
-    },
-    {
-      "mail": "testReducer@gmail.com",
-      "psw": "1234",
-      "id": 2
     }
   ],
   "solarSystem": [

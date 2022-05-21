@@ -29,7 +29,7 @@ function App() {
       dispatchSolarSyst({type: "SET_DATA", payload: response.data})
     })
   }, []);
-  
+
   return (
     <ApiContext.Provider value={{stateSolarSyst, dispatchSolarSyst, stateUser, dispatchUser}}>
     <div className="App">  

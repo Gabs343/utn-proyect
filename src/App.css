@@ -65,6 +65,10 @@
     margin: 50px 0;
 }
 
+.Profile p{
+    font-size: 25px;
+}
+
 .Footer{
     height: 145px;
     margin-top: 45px;

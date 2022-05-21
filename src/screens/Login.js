@@ -16,14 +16,14 @@ function Login(){
 
     const handleSubmit = ((e) => {
         e.preventDefault();
-
         Axios.get(`${env.SERVER}users?mail=${mail}&password=${psw}`).then((response) => {
-            localStorage.setItem("id", response.data[0]["id"]);
-            dispatchUser({type: "SET_LOG", payload: localStorage.getItem("id") !== null })
-            navigate("/");
-        })
-    })
     
+            localStorage.setItem("id", response.data[0]["id"]);
+            dispatchUser({type: "SET_LOG", payload: localStorage.getItem("id") !== null})
+            navigate("/profile");       
+        })   
+    })
+
     return(
         <div className='Login container'>
         <h1>Login</h1>

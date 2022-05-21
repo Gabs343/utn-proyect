@@ -8,11 +8,11 @@ import ApiContext from '../ApiContext';
 function RegisterModal(props){
     const {isShowing, onClose} = props 
 
-    const {stateUser: {mail, psw}, dispatchUser} = useContext(ApiContext);
+    const {stateUser: {mail, psw, favorites}, dispatchUser} = useContext(ApiContext);
 
     const handleSubmit = ((e) => {
         e.preventDefault();
-        const user = { mail, psw};
+        const user = { mail, psw, favorites};
 
         Axios.post(`${env.SERVER}users`, user).then(() => {
             onClose();
